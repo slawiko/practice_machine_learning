@@ -4,13 +4,6 @@ def sum_feature(a):
     """Sum of intensities of all pixels: digits with more used pixels will have higher value."""
     return np.sum(a)
 
-def vertical_symmetry_feature(a):
-    """Subract right part of image from the left part and sum absolute differencies.
-    More symmetrical digits will have lower value."""
-    a = np.reshape(a.astype(int), (28, 28))
-    b = np.abs(a[:,13::-1] - a[:,14:])
-    return np.sum(b)
-
 def right_sum_feature(a):
     a = np.reshape(a, (28, 28))
     return np.sum(a[:, 14:])
@@ -43,7 +36,7 @@ def left_down_sum_feature(a):
     a = np.reshape(a, (28, 28))
     return np.sum(a[:14, :14])
 
-def test(a):
+def intersection_count(a):
     counter = 0
     started = False
     for e in a:
@@ -71,7 +64,7 @@ def digital_clock_feature(a):
     row2 = a[10, :]
     row3 = a[16, :]
 
-    return test(col1) + test(col2) + test(row1) + test(row2) + test(row3)
+    return intersection_count(col1) + intersection_count(col2) + intersection_count(row1) + intersection_count(row2) + intersection_count(row3)
 
 def down_padding_feature(a):
     a = np.reshape(a, (28, 28))
@@ -100,9 +93,6 @@ def left_padding_feature(a):
         if len(np.where(a[:, i] > 80)[0]) > 0:
             return i
     return 0
-
-def combined_padding_feature(a):
-    return left_padding_feature(a) + right_padding_feature(a)
 
 FEATURES = {
     (0, 1) : (empty_feature, digital_clock_feature), # 98.6
