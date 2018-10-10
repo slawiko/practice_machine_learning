@@ -1,5 +1,5 @@
 
-# Created by https://www.gitignore.io/api/macos,virtualenv,python,vscode
+# Created by https://www.gitignore.io/api/macos,virtualenv,python
 
 ### macOS ###
 # General
@@ -160,7 +160,11 @@ pip-selfcheck.json
 # Virtualenv
 # http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
 
-#!! ERROR: vscode is undefined. Use list command to see defined gitignore types !!#
 
+# End of https://www.gitignore.io/api/macos,virtualenv,python
 
-# End of https://www.gitignore.io/api/macos,virtualenv,python,vscode
+### Project specific ###
+hw2/mldata
+hw4/train
+hw4/train90
+hw4/train10
