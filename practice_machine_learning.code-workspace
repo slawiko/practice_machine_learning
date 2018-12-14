@@ -5,6 +5,6 @@
 		}
 	],
 	"settings": {
-		"python.pythonPath": "${workspaceFolder}/bin/python"
+		"python.pythonPath": "/Users/slawiko/.virtualenvs/machine_learning/bin/python"
 	}
 }

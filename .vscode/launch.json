@@ -47,6 +47,13 @@
       "console": "integratedTerminal"
     },
     {
+      "name": "hw7",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/hw7/main.py",
+      "console": "integratedTerminal"
+    },
+    {
       "name": "Python: Attach",
       "type": "python",
       "request": "attach",
