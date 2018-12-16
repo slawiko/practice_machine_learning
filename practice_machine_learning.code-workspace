@@ -5,6 +5,6 @@
 		}
 	],
 	"settings": {
-		"python.pythonPath": "/Users/slawiko/.virtualenvs/machine_learning/bin/python"
+		"python.pythonPath": "/usr/local/bin/python3"
 	}
 }
