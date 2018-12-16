@@ -168,3 +168,8 @@ hw2/mldata
 hw4/train
 hw4/train90
 hw4/train10
+
+
+### Libraries
+liblinear-2.21
+libsvm-3.23
