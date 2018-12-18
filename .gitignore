@@ -164,7 +164,6 @@ pip-selfcheck.json
 # End of https://www.gitignore.io/api/macos,virtualenv,python
 
 ### Project specific ###
-hw2/mldata
 hw4/train
 hw4/train90
 hw4/train10
