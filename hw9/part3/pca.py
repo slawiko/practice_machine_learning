@@ -54,7 +54,7 @@ def task(X, Y):
     compressed_test = compress(W, test_x)
 
     accuracy = kNN(compressed_train, train_y, compressed_test, test_y)
-    print('\nkNN for compressed to {} data accuracy = {}'.format(size, accuracy))
+    print('kNN for compressed to {} data accuracy = {}'.format(size, accuracy))
 
     restored_train = restore(U, compressed_train)
     restored_test = restore(U, compressed_test)
